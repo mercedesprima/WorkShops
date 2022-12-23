@@ -2,17 +2,20 @@
 // принимает на вход число (N) и 
 // выдаёт таблицу квадратов чисел от 1 до N.
 
-Console.Write("Введите число N:   ");
+Console.Write("Введите натуральное число N:   ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-PrintSquares (number);
-
-void PrintSquares (int num)
+if (number > 0)
 {
-   int index = 1;
-    while (index<=num)
+    TableSquare(number);
+}
+else Console.WriteLine("Не натуральное число");
+void TableSquare(int num)
+{
+    int index = 1;
+    while (index <= num)
     {
-        Console.WriteLine($"{index} {index * index}");
+        Console.WriteLine($"{index, 4} {index * index, 15}");
         index++;
     }
 }
