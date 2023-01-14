@@ -6,9 +6,10 @@
 
 Console.Write("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
-// if number <= 0
-
+if (number <=0)
+Console.WriteLine($"Введено не натуральное число");
+else 
+{
 int factorialNumber = FactorialNumber(number);
 Console.WriteLine($"Произведение чисел от 1 до {number} = {factorialNumber}");
 
@@ -24,4 +25,5 @@ int FactorialNumber(int num)
         }
     }
     return result;
+}
 }
