@@ -10,13 +10,13 @@ int countNumbers = CountNumbers(number);
 Console.Write($"Количество цифр в числе = {countNumbers}");
 
 int CountNumbers(int digit)
-{
+{                               // тело метода
     int count = 0;
-    
+
     while (digit != 0)
     {
-       digit = digit / 10;
-       count++;
+        digit = digit / 10;
+        count++;
     }
     return count;
 }
