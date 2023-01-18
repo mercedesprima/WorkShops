@@ -6,18 +6,17 @@
 // 4 -> 10
 // 8 -> 36
 
-Console.Write ("Введите число: ");
+Console.Write("Введите число:  ");
 int number = Convert.ToInt32(Console.ReadLine());
 int sumNumbers = SumNumbers(number);
 Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumbers}");
 
-int SumNumbers(int num)
+int SumNumbers(int num) // метод нахождения суммы
 {
-int sum = 0;
-for (int i = 1; i <= num; i++)
-{
-//sum = sum + i;
-sum += i;
-}
-return sum;
+    int sum = 0;
+    for (int i = 1; i <= num; i++)
+    {
+        sum += i; //sum = sum + i;
+    }
+    return sum;
 }
